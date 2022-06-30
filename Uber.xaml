@@ -1,0 +1,317 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Uber" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="824,3157.6" sap2010:WorkflowViewState.IdRef="Uber_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Uber" sap:VirtualizedContainerService.HintSize="684,3092.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="642.4,3000" sap2010:WorkflowViewState.IdRef="Sequence_6">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="600.8,2907.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="D:\CHRIST\Certificates\Internship\RPA Project\Project 2\Route Tracker-Output.xlsx">
+        <ui:ExcelApplicationScope.Body>
+          <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="567.2,2797.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="sd:DataTable" Name="inputdt" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ExcelReadRange AddHeaders="True" DataTable="[inputdt]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="525.6,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Output - Uber">
+                <ui:ExcelReadRange.Range>
+                  <InArgument x:TypeArguments="x:String">
+                    <Literal x:TypeArguments="x:String" Value="" />
+                  </InArgument>
+                </ui:ExcelReadRange.Range>
+              </ui:ExcelReadRange>
+              <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Book an Uber ride using your web browser on your desktop or phone" sap:VirtualizedContainerService.HintSize="525.6,2604.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="86ad3f75-ec97-4025-b581-cd1f39d1d87f" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="492,2388" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[inputdt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="450.4,2165.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                        <ui:ForEachRow.Body>
+                          <ActivityAction x:TypeArguments="sd:DataRow">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416.8,2048" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Name="UberGo" />
+                                <Variable x:TypeArguments="x:String" Name="Premier" />
+                                <Variable x:TypeArguments="x:String" Name="UberXl" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Sequence sap:VirtualizedContainerService.HintSize="375.2,1953.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayMS="2000" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[row.item(&quot;From&quot;).ToString]">
+                                  <ui:TypeInto.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d31a623d-4f7a-4892-8745-66b1b982a5d7" InformativeScreenshot="79ff48bc2e8f63ad7f64069368831ae9" Selector="&lt;webctrl tag='INPUT' /&gt;">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:TypeInto.Target>
+                                </ui:TypeInto>
+                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click.CursorPosition>
+                                    <ui:CursorPosition Position="Center">
+                                      <ui:CursorPosition.OffsetX>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:CursorPosition.OffsetX>
+                                      <ui:CursorPosition.OffsetY>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:CursorPosition.OffsetY>
+                                    </ui:CursorPosition>
+                                  </ui:Click.CursorPosition>
+                                  <ui:Click.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="72530b66-7475-4099-867b-d3092df06a45" InformativeScreenshot="7821edb081947fa08898f79253b3bf96" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;div' parentid='wrapper' tag='DIV' /&gt;">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:Click.Target>
+                                </ui:Click>
+                                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayMS="2000" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[row.Item(&quot;To&quot;).ToString]">
+                                  <ui:TypeInto.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f23b3ea3-4c4c-451f-9ce4-d424e8b26285" InformativeScreenshot="e896ca80770e45743c55b9b10fee91dc" Selector="&lt;webctrl idx='2' tag='INPUT' /&gt;">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:TypeInto.Target>
+                                </ui:TypeInto>
+                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click.CursorPosition>
+                                    <ui:CursorPosition Position="Center">
+                                      <ui:CursorPosition.OffsetX>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:CursorPosition.OffsetX>
+                                      <ui:CursorPosition.OffsetY>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:CursorPosition.OffsetY>
+                                    </ui:CursorPosition>
+                                  </ui:Click.CursorPosition>
+                                  <ui:Click.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d0152b95-2b41-45d5-b7d1-df644f1c4d14" InformativeScreenshot="7821edb081947fa08898f79253b3bf96" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;div' parentid='wrapper' tag='DIV' /&gt;">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:Click.Target>
+                                </ui:Click>
+                                <uix:NGetText DisplayName="Get Text 'UberGo'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="86ad3f75-ec97-4025-b581-cd1f39d1d87f" Version="V1">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://m.uber.com/looking?drop%5B0%5D=%7B%22latitude%22%3A12.9430462%2C%22longitude%22%3A77.6984384%2C%22addressLine1%22%3A%22Myntra%20Designs%20Pvt.%20Ltd.%22%2C%22addressLine2%22%3A%22WMVX%207FF%2C%20Kodbisanhalli%2C%20Bengaluru%2C%20Karnataka%22%2C%22id%22%3A%22ChIJCbHbMqUUrjsRmAkuNoCaMl8%22%2C%22provider%22%3A%22google_places%22%2C%22index%22%3A0%7D&amp;pickup=%7B%22latitude%22%3A12.9121181%2C%22longitude%22%3A77.6445548%2C%22addressLine1%22%3A%22HSR%20Layout%22%2C%22addressLine2%22%3A%22Bengaluru%2C%20Karnataka%22%2C%22id%22%3A%22ChIJzW7cv5EUrjsRecj7OYRxMvI%22%2C%22provider%22%3A%22google_places%22%2C%22index%22%3A0%7D&amp;vehicle=2007" DesignTimeRectangle="564, 586, 79, 30" ElementType="Text" FriendlyName="'₹167.68'" FullSelectorArgument="&lt;webctrl aaname='₹167.68' parentid='wrapper' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='wrapper' tag='DIV' type='' class='_css-dZTBoz' /&gt;" Guid="7e9ae482-655a-4c40-903b-6d247312937d" InformativeScreenshot="e11829d6e91100f0e4e7da7cfeeb25b7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Book an Uber ride using your web browser on your desktop or phone' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target DesignTimeRectangle="313, 586, 81, 30" ElementType="Text" FriendlyName="'UberGo'" FullSelectorArgument="&lt;webctrl aaname='UberGo' parentid='wrapper' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='UberGo' parentid='wrapper' tag='DIV' type='' class='_css-euhGa-D _css-dZTBoz' check:innerText='UberGo' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFUAAAAiCAYAAAAu0pUjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARZSURBVGhD7ZjLK31RFMfvP2BioIyMJAPJQIoJExTlEWZeA5GUMKIMUGZkJMlEiAFKiRJFGVAGlO6VgUeIJHmF8li/vsvZx77HPu697tn9fvntb62Ou/c6Z6/1OfusvTcfGXkuA1WDDFQNMlA1yEDVIANVgwxUDTJQNchTqHt7e5Samko+n4/W19et1v9PQVDHx8cZCMAAkJvc4P2rUJ+fn2lxcZEqKiooISGB48O1urqalpaWuN9L/XqoR0dHVFJSwjG5Gfrh55V+NdSLiwsqKirieGJjY6mrq4u2trbo6uqKNjc3qbm5mdvRDz/4e6FfC/X19ZU6Ozs5Fnzqq6urVs+n3t/faWVlxS4JbW1tnpQCrVAPDw+prq6OZwOstraWtre3ORmVjo+Pqaenh5KSkvgZGRkZNDg4SA8PD5bHhx4fH6m+vp59uru76fz8nMeJiYnhdvTLsQwPD7uOifaxsTFKT0+n6elpJVRnXLi2trZyfippg4pZIoKQDYlPTEx8SXJtbU3pD6usrKTLy0vLMxhqY2MjlZeX274C6tzcHP8OlQuEWQ1T6bu4MMMXFha+5KINKqyqqoprF4Bg8OzsbOXz8cazsrKC7kF9m5mZsZ/X29trJy5DhWGWzc/P8zg3NzecJPzRl5eXxzX0J5Ljys3NpeXlZY4L18LCQm5XsdIGFZ+j87OVg+zv77daiUZGRrgNM+76+tpq/RAAx8fHU2Zmpr1Cy1Axnt/v53ZZKAvoFzNX1v39PYN2GsZ+eXmxvD7jysnJodPTU6v1Qyg5BQUF3N/X1xc0W7VBxefnFAZGbUK/SPbp6Yk/YbQNDQ1Znp9CoiJ4MZYMtb29XfnpfgdV9DlNzlseAzE7P3EI8aIf5enu7s5q1bxQqSTGKCsr409VhhbKpqam+BlywgCkUrRQ5bgQs0oiF2eJ+WtQRSAw/I22UCaSCwdqJDVVxC3nLccVFVSsdHBKSUmhQCBgtX7Vzs4OJSYmsq+XMxVbHwFaZWLGhQM1ktUfBwLUbdnXs5kqw0KRVgm1BcnDB+YGFWdqp0LVVLfa5VQ4UOVYBgYGXJ+Ldiw08JOhymNEVVOxWtfU1LAjNt6qVRVvFX3wgblB/cnqjz7nhvrt7Y02NjaCgg4HKlbxjo4O9sF+EicnJxj8lk9UMlTIk9UfAiR5kNHRUTo5OaGDgwMGgY1wXFwcb+Lh4wYVJu9TsbfDXg/tycnJtLu7a90VDBt7WexpcQ/ubWpq4rEaGhro9vaW/cOBCu3v79sTwHn2xxW/0V5aWspfqBOqJ/tUCMSx6RZgnYZBZmdnbXhuUJGsVycqJD45OWnfEy5UCC9PgFEZ/qkCwIhbBSjqE5UsvCWcb8UD09LSeJrjLcvw3KCiHc+I5Ox/dnbG9UuMiaBbWlq4DMn3RAIVQhnCi8zPz+eXCisuLub/seKsL+JWQYWiOvsbeSMDVYMMVA0yUDXIQNUgA1WDDFQNMlA9F9EfIJDf/+1zbVQAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NGetText.Target>
+                                  <uix:NGetText.Text>
+                                    <OutArgument x:TypeArguments="x:String">[UberGo]</OutArgument>
+                                  </uix:NGetText.Text>
+                                </uix:NGetText>
+                                <uix:NGetText DisplayName="Get Text 'Premier'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="86ad3f75-ec97-4025-b581-cd1f39d1d87f" Version="V1">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://m.uber.com/looking?drop%5B0%5D=%7B%22latitude%22%3A12.9430462%2C%22longitude%22%3A77.6984384%2C%22addressLine1%22%3A%22Myntra%20Designs%20Pvt.%20Ltd.%22%2C%22addressLine2%22%3A%22WMVX%207FF%2C%20Kodbisanhalli%2C%20Bengaluru%2C%20Karnataka%22%2C%22id%22%3A%22ChIJCbHbMqUUrjsRmAkuNoCaMl8%22%2C%22provider%22%3A%22google_places%22%2C%22index%22%3A0%7D&amp;pickup=%7B%22latitude%22%3A12.9121181%2C%22longitude%22%3A77.6445548%2C%22addressLine1%22%3A%22HSR%20Layout%22%2C%22addressLine2%22%3A%22Bengaluru%2C%20Karnataka%22%2C%22id%22%3A%22ChIJzW7cv5EUrjsRecj7OYRxMvI%22%2C%22provider%22%3A%22google_places%22%2C%22index%22%3A0%7D&amp;vehicle=2007" DesignTimeRectangle="563, 750, 84, 30" ElementType="Text" FriendlyName="'₹208.24'" FullSelectorArgument="&lt;webctrl aaname='₹208.24' parentid='wrapper' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='wrapper' tag='DIV' type='' class='_css-dZTBoz' /&gt;" Guid="ba377a83-18af-4df0-a5fd-a4d427bc8138" InformativeScreenshot="39db8bae8793b8710b3b22930b9ae19d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Book an Uber ride using your web browser on your desktop or phone' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target DesignTimeRectangle="309, 750, 83, 30" ElementType="Text" FriendlyName="'Premier'" FullSelectorArgument="&lt;webctrl aaname='Premier' parentid='wrapper' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Premier' parentid='wrapper' tag='DIV' type='' class='_css-euhGa-D _css-dZTBoz' check:innerText='Premier' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFcAAAAiCAYAAAAqJ0UeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARZSURBVGhD7ZjLK31RFMf9AyZmRkaSgQwMFBlIMaAYMEMMJGZi4JEBiShSJiIGHjOKkRJKeeUxQEnkkUckJOSRx/r1Xc6+v3WOc+51+/327f767W+tuGvtve4+n73249wIMtImA1ejDFyNMnA1ysDVKANXowxcjTJwNeq/gnt5eUkFBQWUkZFB+/v7llefbHCvr68pKyuLIiIiXC0uLo7a2tro6urK6vFvaWxszPcsIyMjllefgoKrLDk5mXZ2dqxe/45U5ebk5NDBwYHl1SdPuH19ffxZGQY2Pj5OiYmJHMcgb29vrZ5GbvKE67VsZmdnKTo6miIjI2lmZsbyGrkpaLio1uzsbG7T29vLvt3dXV9FLyws0OLiIqWlpX3L8/HxQUtLS1RaWkpRUVE8QXl5eTQ3N8cxKWfOk5MTKisr434xMTHU0NBANzc33Pbz85MnHQcV2mPbGhgYoJeXF44rOXM6hefv6enh/mjj74xpbm7mNuXl5byqGxsbeWzgpxQ03Lu7O8rPz+c2XV1d7JODbm9v54fH/zLP29sbdXR0MFAVUwYfHgptlGTO/v5+3wNLy83NpYuLCxodHXXNW1tbawPsDy5iqamp33LAMjMzaW9vz2r5JQW3sLCQJ121/SO4m5ubFB8fz20mJyfZJwcNKy4u5nbI9/T0xG0mJiYYAGYX1XB4eMjW0tLCfmw18/Pz3BaSOTFZNTU1fH2CVVVV+b4LFYMDCmfE6ekp58BnxJBXbl1ecLEacYbAj77og2rEX4CFHxWqngVScGGo8MHBQe4jz6Efw8XSw+ypLSE9PZ3Ozs44JgeNWXx8fGS/Ej6XlJRwvLu7m3Mp4f/Ozk6OAdrr6yv7Zc76+npbVSOfrJbh4WFbzqOjI18Vtra2Wl5vuICIiUAf9JVCAWDVYPLX19ct72+48GNLcpMnXH+GSpqamrJ62Qc9PT1teX8L1ZaUlESxsbFc0U4tLy/zw+G7MQZI5pQVrYTJRywlJYWOj48t75fe39+prq6O47LivOBiAuBDH/SVen5+psrKSo7LglNwi4qK6P7+3vLaFTRcLJuNjQ1bpXgNWknBc+ZyGiZAvTkFygkfYnJCpOSB4w+uhBfI5Cpwy++UJ1znPReGw0xCVfopiECGHMgFhQouYmgDXyBDTqU/gut1oLkpEAhVuQkJCbS6umqbMGk4DNTeGiq4snKxtzvHJO3h4YH7QGEDV+25AOwWd1Oo4EJqz/UHyqmwgStvC9XV1d8u9zgQVlZWbC8SoYSrbgs4qNfW1izvl7ANbm1t8X1aKmzgQuqeizYVFRV8a8C9EHdlfCdiQ0NDPsChhCvvuYjjaoexbW9vU1NTE9/NcZCfn59bPcIMrr83NBjumMijFEq4EGJeb2gYM8Yu79phBRfCEsPyV78toD0u6Hj1dQIKNVwItyH52wLGiLHi9xDnbx9BwzX6uzJwNcrA1SgDV6MMXI0ycDXKwNUoA1ebiH4BBWAemEGFPOAAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NGetText.Target>
+                                  <uix:NGetText.Text>
+                                    <OutArgument x:TypeArguments="x:String">[Premier]</OutArgument>
+                                  </uix:NGetText.Text>
+                                </uix:NGetText>
+                                <uix:NGetText DisplayName="Get Text 'UberXL'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="86ad3f75-ec97-4025-b581-cd1f39d1d87f" Version="V1">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://m.uber.com/looking?drop%5B0%5D=%7B%22latitude%22%3A12.9430462%2C%22longitude%22%3A77.6984384%2C%22addressLine1%22%3A%22Myntra%20Designs%20Pvt.%20Ltd.%22%2C%22addressLine2%22%3A%22WMVX%207FF%2C%20Kodbisanhalli%2C%20Bengaluru%2C%20Karnataka%22%2C%22id%22%3A%22ChIJCbHbMqUUrjsRmAkuNoCaMl8%22%2C%22provider%22%3A%22google_places%22%2C%22index%22%3A0%7D&amp;pickup=%7B%22latitude%22%3A12.9121181%2C%22longitude%22%3A77.6445548%2C%22addressLine1%22%3A%22HSR%20Layout%22%2C%22addressLine2%22%3A%22Bengaluru%2C%20Karnataka%22%2C%22id%22%3A%22ChIJzW7cv5EUrjsRecj7OYRxMvI%22%2C%22provider%22%3A%22google_places%22%2C%22index%22%3A0%7D&amp;vehicle=2007" DesignTimeRectangle="563, 612, 84, 30" ElementType="Text" FriendlyName="'₹345.56'" FullSelectorArgument="&lt;webctrl aaname='₹345.56' parentid='wrapper' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='wrapper' tag='DIV' type='' class='_css-dZTBoz' /&gt;" Guid="78d72ec4-ac94-4bf2-a00a-8ab33f5e7038" InformativeScreenshot="03b4366c7ec38bc6c95288db4c3fb2c8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Book an Uber ride using your web browser on your desktop or phone' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target DesignTimeRectangle="309, 612, 79, 30" ElementType="Text" FriendlyName="'UberXL'" FullSelectorArgument="&lt;webctrl aaname='UberXL' parentid='wrapper' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='UberXL' parentid='wrapper' tag='DIV' type='' class='_css-euhGa-D _css-dZTBoz' check:innerText='UberXL' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFMAAAAiCAYAAAAjzOVkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAQrSURBVGhD7ZjNK/VBFMfvP2BjoawsZSFZyMKGFAs2imy8FomdrCgLFLKQspMsvOyQraIo2bBBIcpLiCTvecnLefoev/Mzd+78nt9Vs7iPZ751uszbnfnMOTNnboScrMnBtCgH06IcTItyMC3KwbQoB9OiHEyLcjAtyirMp6cnampqokgkQt3d3V7p/6MomCsrKwwChr+DdHV1RcXFxdxucnLSK00cmNvb25Sbm8vzqKiooOvra68mWu/v7zQwMMDt0tLSaGlpicuxJpRhjVhrvPqVMKG5uTlKSkriuYyMjNDn56dX8y2sERDRBlABF3IwNb28vFBbWxvPJSsri71VFbwVXov6srIyury89GocTKMODw8pLy+P59PY2EiPj49cDi8dGhricnjm2toal4sSEiYmj0mnp6dzWWFhIU1PT7PXmIRxh4eH/fMO/fr6+qK8RoTx0Qbfd3FxQZ2dnZScnBwDYH5+nsMdNjU1xSA3NjYoIyOD+2N++hGQcDDr6ur8MNKtpaXF9xLR7u6u70W6FRUV0d7entfySwKzqqqKvU7a6gDe3t6oo6OD67BJ8MKamhr+P+hySjiYsJycHJqdnWXPgTc0Nzf7dWo/9fwqLS2lhYUF7oNPgEQ5xsX4IoEJgwePjY1xH4z18fHhtfrS+fk5lZSUcNvU1FT+hGdiTiYlHEzToa9eCuXl5XR7e8vlgIYwhGfinFN1cHDAHgUI6+vrXuk3TJQvLi56pcFCGwEJC7rhoYSD2draSq+vr17NtzAuwAE2Qhvq7e3lPu3t7X56Inp+fuZjQf8ugVldXU339/deabDOzs78OWdmZtLW1pZXE6uEg4nFmgSAACmepsIKM0AXCUw9/E3CudnT0xM1luncFv1zMOU71D5hpo75E5gS4oiI2tpa/kTfiYkJY6hbgbmzs8MhgIGWl5e90lghZPLz87mdTc/ErYvJB9nDw4M3SvwwT09PqaCggNvie25ubvzb3XSuQ1ZgqpCQt+nnl0hyN7QLgmk6/yB4Y9CZGY+XieKBqadFAk4FjDTp7u6Oy0VWYGLxgIiB1Ie/qqOjIz/NgAXBNO162G1ueo0gDDc3Nzm9URUPTFPCLlIdQk/crcCEkBzLCwSLGxwc5PTk5OSExsfHOXdMSUnxJxIEE6bmmbg9ccNL3ejoqNcrOs/EJuAskz5dXV38skH+icgRhcEMekqKVK/VN1Fg4sW2v7/vHzO66TltDExodXWVF4UBdUOCjCdh2AXU0NBAlZWVUX3FTDcpQj7oBYSNw686ACD6G8ywHzlEarirP3YIzDDTPdcIE8LAeBdnZ2dzR0DETh4fH/MAYTCx2J++zRH26tscHllfX8+bq79qgmAiXGdmZvzICbqxRWq49/f384ZZh+n0czmYFuVgWpSDaVEOpkU5mBblYFoT0R/FjR9aYmn70gAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NGetText.Target>
+                                  <uix:NGetText.Text>
+                                    <OutArgument x:TypeArguments="x:String">[UberXl]</OutArgument>
+                                  </uix:NGetText.Text>
+                                </uix:NGetText>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Uber&quot; + Premier  + UberGo + UberXl]" />
+                                <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="333.6,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://m.uber.com/" Version="V1" />
+                                <Assign sap:VirtualizedContainerService.HintSize="333.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Object">[row("Aggregator")]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Object">["Uber"]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <Assign sap:VirtualizedContainerService.HintSize="333.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Object">[row("UberGo")]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Object">[UberGo]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <Assign sap:VirtualizedContainerService.HintSize="333.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Object">[row("Premier")]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Object">[Premier]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <Assign sap:VirtualizedContainerService.HintSize="333.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Object">[row("UberXL")]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Object">[UberXl]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ForEachRow.Body>
+                      </ui:ForEachRow>
+                      <ui:ExcelWriteRange AddHeaders="True" DataTable="[inputdt]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="450.4,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Output - Uber">
+                        <ui:ExcelWriteRange.StartingCell>
+                          <InArgument x:TypeArguments="x:String">
+                            <Literal x:TypeArguments="x:String" Value="" />
+                          </InArgument>
+                        </ui:ExcelWriteRange.StartingCell>
+                      </ui:ExcelWriteRange>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABPSURBVDhPpcuxDQAgEMNA9l/6obYjRERxjZWsmfkSYyPGRowNh5NutFfAgbRXwIG0V8CBtFfAgbRXwIG0V8CBtFfAgbRnaMXYiLER47tZG/sxfZ+R/hxrAAAAAElFTkSuQmCC" InformativeScreenshot="951e12d7a1e18f63bcf96318e51ebb1d.png" Selector="&lt;html app='chrome.exe' url='https://m.uber.com' /&gt;" Url="https://m.uber.com" />
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </Sequence>
+          </ActivityAction>
+        </ui:ExcelApplicationScope.Body>
+      </ui:ExcelApplicationScope>
+    </Sequence>
+  </Sequence>
+</Activity>
